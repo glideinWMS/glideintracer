@@ -16,7 +16,10 @@ The main repo is hosted on GitHub: https://github.com/glideinWMS/glideintracer
 We recommend to use the [GitHub CLI](https://cli.github.com/) to easily authenticate and interact with GitHub.
 [Here]() are the install istructions, e.g. on RedHat based distros (dnf):
 ```bash
-# run these as root or with sudo
+# On CentOS7/SL7 run the following as root or with sudo
+wget https://github.com/cli/cli/releases/download/v1.9.2/gh_1.9.2_linux_amd64.rpm
+yum install -y gh_1.9.2_linux_amd64.rpm
+# On EL8 run these as root or with sudo
 dnf install 'dnf-command(config-manager)'
 dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 dnf install gh
